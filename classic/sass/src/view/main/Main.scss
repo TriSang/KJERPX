@@ -1,0 +1,362 @@
+/* 
+$base-color: grey !dynamic;
+*/
+/**
+ * Generates a set of style rules for the "navigation" panel UI.
+ */
+
+/* action menu icon spacing */
+.action_icon {
+	margin:0px 5px 0px 0px;
+}
+
+.x-tree-noicon .x-tree-icon-leaf 
+{
+display: none !important;
+}
+.file-combo-down { 
+	margin:10px 0px 0px 0px;
+	width:16px;
+	height:16px;
+} 
+.file-combo-add { 
+	margin:10px 0px 0px 0px;
+	width:16px;
+	height:16px;
+	float:right;
+} 
+
+.file-combo-drop { 
+	margin:10px 0px 0px 0px;
+	width:16px;
+	height:16px;
+	float:right;
+} 
+/*
+.x-grid-tree-node-expanded .x-tree-icon-parent {
+    background: url('http://icons.iconarchive.com/icons/sekkyumu/developpers/16/Play-Green-Button-icon.png') no-repeat center center !important;
+}
+
+.x-grid-row  .x-tree-icon-leaf {
+    background-image:url('/resources/images/icon/component.png');
+}
+*/
+.user_icon {
+    background-image:url('/resources/images/icon/user.png');
+}
+.users_icon {
+    background-image:url('/resources/images/icon/users.png');
+}
+.component_icon {
+    background-image:url('/resources/images/icon/component.png');
+}
+.product_icon {
+    background-image:url('/resources/images/icon/product.png');
+}
+.contact_icon {
+    background-image:url('/resources/images/icon/contact.png');
+}
+.company_icon {
+    background-image:url('/resources/images/icon/company.png');
+}
+.quotation_icon {
+    background-image:url('/resources/images/icon/quotation.png');
+}
+.rfq_icon {
+    background-image:url('/resources/images/icon/rfq.png');
+}
+.news_icon {
+    background-image:url('/resources/images/icon/news.png');
+}
+.dashboard_icon {
+    background-image:url('/resources/images/icon/dashboard.png');
+}
+.vessel_icon {
+    background-image:url('/resources/images/icon/vessel.png');
+}
+.logout_icon {
+    background-image:url('/resources/images/icon/logout.png');
+}
+
+
+$my-icon-news : '\f028';
+$my-icon-logout : '\f08b';
+$my-icon-product : '\f1b2';//'\f1b3';
+$my-icon-rfq : '\f003';
+$my-icon-component : '\f12e';//'\f1b2';
+$my-icon-contact : '\f02d';
+$my-icon-quotation : '\f1ec';
+$my-icon-company : '\f1ad';
+$my-icon-dashboard : '\f1fe';
+$my-icon-vessel : '\f21a';
+$my-icon-user : '\f007';
+$my-icon-users : '\f0c0';
+$my-icon-auth : '\f023';
+$my-icon-contract : '\f24d';
+$my-icon-shipping :'\f0d1';
+$my-icon-service :'\f0ad';
+$my-icon-drawing :'\f040';
+$my-icon-eye :'\f06e';
+$my-icon-download :'\f019';
+$my-icon-config : '\f013';
+$my-icon-list : '\f03a';
+$my-icon-check : '\f046';
+$my-icon-uncheck : '\f096';
+$my-icon-exlink : '\f082';
+$my-icon-option : '\f013';
+$my-icon-transfer : '\f14d';
+$my-icon-copy : '\f0c5';
+$my-icon-trash : '\f1f8';
+$my-icon-file : '\f0f6';
+$my-icon-add : '\f067';
+$my-icon-edit : '\f044';
+$my-icon-info : '\f05a';
+$my-icon-rms : '\f0fa';
+$my-icon-refresh : '\f021';
+$my-icon-bell : '\f0a2';
+$my-icon-selected : '\f00c';
+
+@mixin mytree-font-icon($font-name) {
+    @if $enable-font-icons and ($tree-leaf-glyph != null) {
+        @include font-icon($font-name, $line-height: null);
+        color: $tree-leaf-glyph-color;
+    } @else {
+        background-image: theme-background-image('tree/leaf');
+
+        @if $include-rtl {
+            &.#{$prefix}rtl {
+                background-image: theme-background-image('tree/leaf-rtl');
+            }
+        }
+    }
+    text-decoration: none;
+}
+.my-tree-icon-contract {
+	@include mytree-font-icon($my-icon-contract);
+}
+
+.my-tree-icon-news {
+	@include mytree-font-icon($my-icon-news);
+}
+
+.my-tree-icon-logout {
+	@include mytree-font-icon($my-icon-logout);
+}
+
+.my-tree-icon-product {
+	@include mytree-font-icon($my-icon-product);
+}
+
+.my-tree-icon-rfq {
+	@include mytree-font-icon($my-icon-rfq);
+}
+
+.my-tree-icon-component {
+	@include mytree-font-icon($my-icon-component);
+}
+
+.my-tree-icon-contact {
+	@include mytree-font-icon($my-icon-contact);
+}
+
+.my-tree-icon-quotation {
+	@include mytree-font-icon($my-icon-quotation);
+}
+.my-tree-icon-company {
+	@include mytree-font-icon($my-icon-company);
+}
+
+.my-tree-icon-dashboard {
+	@include mytree-font-icon($my-icon-dashboard);
+}
+
+.my-tree-icon-vessel {
+	@include mytree-font-icon($my-icon-vessel);
+}
+
+.my-tree-icon-user {
+	@include mytree-font-icon($my-icon-user);
+}
+
+.my-tree-icon-users {
+	@include mytree-font-icon($my-icon-users);
+}
+
+.my-tree-icon-auth {
+	@include mytree-font-icon($my-icon-auth);
+}
+
+.my-tree-icon-shipping {
+	@include mytree-font-icon($my-icon-shipping);
+}
+
+.my-tree-icon-service {
+	@include mytree-font-icon($my-icon-service);
+}
+
+.my-tree-icon-drawing {
+	@include mytree-font-icon($my-icon-drawing);
+}
+.my-tree-icon-eye {
+	@include mytree-font-icon($my-icon-eye);
+}
+.my-tree-icon-download {
+	@include mytree-font-icon($my-icon-download);
+}
+.my-tree-icon-config {
+	@include mytree-font-icon($my-icon-config);
+}
+.my-tree-icon-list {
+	@include mytree-font-icon($my-icon-list);
+}
+.my-tree-icon-check {
+	@include mytree-font-icon($my-icon-check);
+}
+.my-tree-icon-uncheck {
+	@include mytree-font-icon($my-icon-uncheck);
+}
+.my-tree-icon-exlink {
+	@include mytree-font-icon($my-icon-exlink);
+}
+.my-tree-icon-option {
+	@include mytree-font-icon($my-icon-option);
+}
+.my-tree-icon-copy {
+	@include mytree-font-icon($my-icon-copy);
+}
+.my-tree-icon-transfer {
+	@include mytree-font-icon($my-icon-transfer);
+}
+.my-tree-icon-trash {
+	@include mytree-font-icon($my-icon-trash);
+}
+.my-tree-icon-file {
+	@include mytree-font-icon($my-icon-file);
+}
+.my-tree-icon-add {
+	@include mytree-font-icon($my-icon-add);
+}
+.my-tree-icon-edit {
+	@include mytree-font-icon($my-icon-edit);
+}
+.my-tree-icon-info {
+	@include mytree-font-icon($my-icon-info);
+}
+.my-tree-icon-rms {
+	@include mytree-font-icon($my-icon-rms);
+}
+.my-tree-icon-refresh {
+	@include mytree-font-icon($my-icon-refresh);
+}
+.my-tree-icon-bell {
+	@include mytree-font-icon($my-icon-bell);
+}
+.my-tree-icon-selected {
+	@include mytree-font-icon($my-icon-selected);
+}
+
+@mixin mypanel-font-icon($font-name) {
+	@include font-icon($font-name);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.my-panel-icon-contract {
+	@include mypanel-font-icon($my-icon-contract);
+}
+.my-panel-icon-news {
+	@include mypanel-font-icon($my-icon-news);
+}
+
+.my-panel-icon-logout {
+	@include mypanel-font-icon($my-icon-logout);
+}
+
+.my-panel-icon-product {
+	@include mypanel-font-icon($my-icon-product);
+}
+
+.my-panel-icon-rfq {
+	@include mypanel-font-icon($my-icon-rfq);
+}
+
+.my-panel-icon-component {
+	@include mypanel-font-icon($my-icon-component);
+}
+
+.my-panel-icon-contact {
+	@include mypanel-font-icon($my-icon-contact);
+}
+
+.my-panel-icon-quotation {
+	@include mypanel-font-icon($my-icon-quotation);
+}
+.my-panel-icon-company {
+	@include mypanel-font-icon($my-icon-company);
+}
+
+.my-panel-icon-dashboard {
+	@include mypanel-font-icon($my-icon-dashboard);
+}
+
+.my-panel-icon-vessel {
+	@include mypanel-font-icon($my-icon-vessel);
+}
+
+.my-panel-icon-user {
+	@include mypanel-font-icon($my-icon-user);
+}
+
+.my-panel-icon-users {
+	@include mypanel-font-icon($my-icon-users);
+}
+
+.my-panel-icon-auth {
+	@include mypanel-font-icon($my-icon-auth);
+}
+
+.my-panel-icon-service {
+	@include mypanel-font-icon($my-icon-service);
+}
+
+.my-panel-icon-shipping {
+	@include mypanel-font-icon($my-icon-shipping);
+}
+
+.my-panel-icon-drawing {
+	@include mypanel-font-icon($my-icon-drawing);
+}
+
+.my-panel-icon-option {
+	@include mypanel-font-icon($my-icon-option);
+}
+
+.my-drawing-icon {
+	margin-right:7px;
+}
+
+.image-gallery-category {
+	font-weight:bold;
+	color:gray;
+}
+.image-gallery-name {
+}
+.image-gallery-image {
+	max-width:100%;height:auto;
+}
+
+.infoComponent {
+	text-decoration:none;
+}
+
+.noDecoration {
+	text-decoration:none;
+}
+
+.subItemRow {
+	font-size:0.9em;
+	color:red;
+}

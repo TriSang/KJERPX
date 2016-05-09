@@ -1,0 +1,39 @@
+Ext.define('KJERP.model.ShippingSubItem',{
+	extend:'Ext.data.TreeModel',
+	requires:[
+	],
+			
+	fields:[{
+		name:'shippingIdx',
+		defaultValue:0
+	},{
+		name:'parentComponentIdx'	
+	},{
+		name:'componentIdx'	
+	},{
+		name:'name'
+	},{
+		name:'model'
+	},{
+		name:'serialNo'		
+	},{
+		name:'type'		
+	},{
+		name:'qty'
+	},{
+		name:'unitPrice'
+	},{
+		name:'price'
+	},{
+		name:'tax'
+	},{
+		name:'total'
+	},{
+		name:'tag', convert:_FUNCTION.tagConverter
+	},{
+		name:'remark',
+		defaultValue:''
+	},
+	'RDATE','RUSER','EDATE','EUSER'
+	]
+});

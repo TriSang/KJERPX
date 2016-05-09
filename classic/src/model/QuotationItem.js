@@ -1,0 +1,35 @@
+Ext.define('KJERP.model.QuotationItem',{
+	extend:'Ext.data.TreeModel',
+	requires:[
+	],
+			
+	fields:[{
+		name:'quotationIdx',
+		defaultValue:0
+	},{
+		name:'componentIdx'	
+	},{
+		name:'name'
+	},{
+		name:'model'
+	},{
+		name:'type'		
+	},{
+		name:'qty'
+	},{
+		name:'unitPrice'
+	},{
+		name:'price'
+	},{
+		name:'tax'
+	},{
+		name:'total'
+	},{
+		name:'tag', convert:_FUNCTION.tagConverter	
+	},{
+		name:'remark',
+		defaultValue:''
+	},
+	'RDATE','RUSER','EDATE','EUSER'
+	]
+});

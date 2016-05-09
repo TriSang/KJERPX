@@ -1,0 +1,37 @@
+Ext.define('KJERP.model.ServiceItem',{
+	extend:'Ext.data.TreeModel',
+	requires:[
+	],
+			
+	fields:[{
+		name:'serviceIdx',
+		defaultValue:0
+	},{
+		name:'componentIdx'	
+	},{
+		name:'name'
+	},{
+		name:'model'
+	},{ 
+  		name:'serviceWork'  	
+	},{
+		name:'type'		
+	},{
+		name:'qty'
+	},{
+		name:'unitPrice'
+	},{
+		name:'price'
+	},{
+		name:'tax'
+	},{
+		name:'total'
+	},{
+		name:'tag', convert:_FUNCTION.tagConverter	
+	},{
+		name:'remark',
+		defaultValue:''
+	},
+	'RDATE','RUSER','EDATE','EUSER'
+	]
+});

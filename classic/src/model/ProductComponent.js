@@ -1,0 +1,33 @@
+Ext.define('KJERP.model.ProductComponent',{
+	extend:'Ext.data.Model',
+	requires:[
+	],
+			
+	fields:[{
+		name:'mainComponentIdx'	
+	},{
+		name:'subComponentIdx'
+	},{
+		name:'componentIdx'
+	},{
+		name:'name'
+	},{
+		name:'model'
+	},{
+		name:'type'
+	},{
+		name:'qty'
+	},{
+		name:'tag', convert:_FUNCTION.tagConverter
+	},{
+		name:'componentOrder'
+	},{
+		name:'componentTypeIdx',
+		defaultValue:0
+	},{
+		name:'componentCategoryIdx',
+		defaultValue:0
+	},
+	'RDATE','RUSER','EDATE','EUSER'
+	]
+});

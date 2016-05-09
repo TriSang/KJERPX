@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>KJERP</title>
+
+    <link rel="stylesheet" type="text/css" href="test/lib/jasmine-2.4.1/jasmine.css">
+
+    <script type="text/javascript" src="resources/js/global.js"></script>
+    <script type="text/javascript" src="resources/js/ckeditor/ckeditor.js"></script>
+ 	<script type="text/javascript">
+        var Ext = Ext || {}; // Ext namespace won't be defined yet...
+
+        // This function is called by the Microloader after it has performed basic
+        // device detection. The results are provided in the "tags" object. You can
+        // use these tags here or even add custom tags. These can be used by platform
+        // filters in your manifest or by platformConfig expressions in your app.
+        //
+        Ext.beforeLoad = function (tags) {
+            Ext.manifest = 'classic'; // this name must match a build profile name
+        };
+    </script>    
+
+    <script type="text/javascript" src="test/lib/jasmine-2.4.1/jasmine.js"></script>
+    <script type="text/javascript" src="test/lib/jasmine-2.4.1/jasmine-html.js"></script>
+    <script type="text/javascript" src="test/lib/jasmine-2.4.1/boot.js"></script>
+    <!-- include specs here -->
+	<script type="text/javascript">
+		_TEST.isOn = true;
+		_TEST.specs = [
+//			'test/specs/login_ui.js',
+			'test/specs/login_service.js'
+		];
+	</script>
+    <script id="microloader" data-app="3ff49e16-c84a-453b-8432-79ab734a8ead" type="text/javascript" src="bootstrap.js"></script>
+</head>
+<body>
+</body>
+</html>

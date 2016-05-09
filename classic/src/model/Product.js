@@ -1,0 +1,72 @@
+Ext.define('KJERP.model.Product',{
+	extend:'Ext.data.TreeModel',
+	requires:[
+	],
+	fields:[{
+		name:'componentIdx'	
+	},{
+		name:'companyIdx'
+	},{
+		name:'vesselIdx'		
+	},{
+		name:'name'
+	},{
+		name:'model'
+	},{
+		name:'type'
+	},{
+		name:'barcode'			
+	},{
+		name:'compGroupIDX'
+	},{
+		name:'isProduct'
+	},{		
+		name:'compGroupName'
+	},{
+		name:'unit'
+	},{
+		name:'companyName'
+	},{
+		name:'JRCOrderCode'
+	},{
+		name:'HSCode'
+	},{
+		name:'IHM'
+	},{
+		name:'shipdexCode'
+	},{
+		name:'remark'
+	},{
+		name:'mass'
+	},{
+		name:'color'		
+	},{
+		name:'volume'
+	},{
+		name:'currency'
+	},{
+		name:'purchasePrice'		
+	},{
+		name:'listPrice'		
+	},{
+		name:'discountPrice'				
+	},{
+		name:'tag', convert:_FUNCTION.tagConverter	
+	},{ 
+		name:'memoIdx'
+	},{ 
+		name:'memo'
+	},{
+		name:'state'			
+	},
+	'RDATE','RUSER','EDATE','EUSER'
+	],
+	validators: {
+        name: [{
+			type:'presence'
+        }] ,
+        HSCode :[{
+        	type:'length', max:2
+        }]
+  }	
+});

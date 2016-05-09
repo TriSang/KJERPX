@@ -1,0 +1,39 @@
+Ext.define('KJERP.model.ContractSubItem',{
+	extend:'Ext.data.TreeModel',
+	requires:[
+	],
+			
+	fields:[{
+		name:'contractIdx',
+		defaultValue:0
+	},{
+		name:'parentComponentIdx'	
+	},{
+		name:'componentIdx'	
+	},{
+		name:'name'
+	},{
+		name:'model'
+	},{
+		name:'type'		
+	},{
+		name:'qty'
+	},{
+		name:'unitPrice'
+	},{
+		name:'price'
+	},{
+		name:'tax'
+	},{
+		name:'total'
+	},{
+		name:'shippingDate', type:'date'
+	},{
+		name:'tag', convert:_FUNCTION.tagConverter
+	},{
+		name:'remark',
+		defaultValue:''
+	},
+	'RDATE','RUSER','EDATE','EUSER'
+	]
+});
